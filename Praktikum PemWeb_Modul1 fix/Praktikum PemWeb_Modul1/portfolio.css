@@ -29,8 +29,8 @@ html {
    ========================================================================== */
 .btn-beranda {
   position: fixed;
-  bottom: 25px;
-  right: 25px;
+  top: 35px;    /* Diturunkan sedikit dari bagian paling atas layar */
+  left: 25px;   /* Posisi di sebelah kiri atas */
   background-color: var(--color-warm-brown);
   color: var(--color-cream-bg);
   padding: 12px 20px;
@@ -39,7 +39,7 @@ html {
   font-weight: bold;
   font-size: 14px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  z-index: 999; /* Z-Index agar selalu di atas elemen lain */
+  z-index: 999; /* Memastikan tombol selalu melayang di atas konten lain saat kescroll */
   transition: all 0.3s ease;
 }
 
@@ -382,8 +382,6 @@ html {
   }
 
   .btn-beranda {
-    bottom: 15px;
-    right: 15px;
     padding: 10px 16px;
     font-size: 12px;
   }
